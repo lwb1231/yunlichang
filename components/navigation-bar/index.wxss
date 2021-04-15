@@ -1,0 +1,13 @@
+/* components/navigation-bar/index.wxss */
+.navigation-bar {
+  width: 750rpx;
+  height: 128rpx;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FF5224;
+}

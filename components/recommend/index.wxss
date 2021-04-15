@@ -1,0 +1,158 @@
+/* components/recommend/index.wxss */
+
+/*筛选项*/
+.navbar {
+  width: 90%;
+  display: flex;
+  margin-left: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: 19rpx;
+}
+
+.navbar .item {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/*筛选项字体*/
+.navbar>text {
+  height: 23rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  position: relative;
+  flex: auto;
+  text-align: center;
+  z-index: 99;
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -100rpx;
+  left: 32rpx;
+  width: 100rpx;
+  height: 30rpx;
+  background: #FF4615;
+  border-radius: 15rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  z-index: -99;
+}
+
+.navbar .item.active {
+  color: #FF3904;
+}
+
+.navbar .item.hover {
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFEFE;
+}
+
+.long {
+  height: 37rpx;
+  width: 1rpx;
+  background: #333333;
+}
+
+.one {
+  position: absolute;
+  left: 190rpx;
+  margin-top: 60rpx;
+}
+
+.two {
+  position: absolute;
+  left: 350rpx;
+  margin-top: 60rpx;
+}
+
+.three {
+  position: absolute;
+  left: 530rpx;
+  margin-top: 60rpx;
+}
+
+/* 商品详细内容 */
+.commodity-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20rpx 0;
+  width: 713rpx;
+  height: 250rpx;
+  background: #FFFFFF;
+  box-shadow: 2rpx 4rpx 10rpx 1rpx rgba(255, 82, 36, 0.2);
+  border-radius: 20rpx;
+  margin-left: 19rpx;
+  position: relative;
+}
+
+.text {
+  width: 454rpx;
+  height: 80rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.segmentation {
+  width: 1rpx;
+  height: 20rpx;
+  background: #333333;
+  margin: 0 9rpx;
+}
+
+.sell {
+  display: flex;
+  align-items: center;
+  margin: 28rpx 0 34rpx 0;
+font-size: 20rpx;
+font-family: PingFang SC;
+font-weight: 500;
+color: #666666;
+}
+
+.commodity-content>image {
+  width: 200rpx;
+  height: 230rpx;
+}
+.rate{
+  display: flex;
+  align-items: center;
+}
+.rate-1{
+display: flex;
+flex-direction: column;
+margin-right: 40rpx;
+font-size: 20rpx;
+font-family: PingFang SC;
+font-weight: 800;
+color: #333333;
+}
+.rate .rate-1:nth-child(1){
+font-size: 20rpx;
+font-family: PingFang SC;
+font-weight: 800;
+color: #FF5727;
+}
+.add{
+  position: absolute;
+  right: 25rpx;
+  bottom: 25rpx;
+}

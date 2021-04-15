@@ -1,0 +1,55 @@
+<!--components/recommend/index.wxml-->
+<!-- 推荐 -->
+<!--头部导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"
+    bindtap="navbarTap">
+    {{item.title}}
+    <text class=" item {{ currentTab==index ? 'hover' : ''}}"
+      style="font-size: 20rpx;font-family: PingFang SC;margin-left:-3rpx;margin-top:14rpx">{{item.name}}</text>
+  </text>
+  <view class="long one"></view>
+  <view class="long two"></view>
+  <view class="long three"></view>
+
+</view>
+<view style="margin-top:119rpx">
+  <!--推荐-->
+  <view hidden="{{currentTab!==0}}">
+    <!-- 商品详情list -->
+    <view class="commodity">
+      <view wx:for="{{commodity_list}}" class="commodity-content ">
+        <image src="{{item.img}}"></image>
+        <view class="text">
+          <text>{{item.text}}</text>
+          <view class="sell">
+            <text>总价:{{item.piece}}件</text>
+            <text class="segmentation"></text>
+            <text>{{item.individual}}个商铺在买</text>
+          </view>
+          <view class="rate">
+            <view wx:for="{{commission}}" class="rate-1">
+              <view class="advance">
+                <text>{{item.title}}</text>
+              <text>{{item.earnings}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      <image src="/images/main/上架店铺icon@2x.png" class="add" style="width:18rpx;height:18rpx"></image>
+      </view>
+    </view>
+  </view>
+  <!--销量-->
+  <view hidden="{{currentTab!==1}}">
+    2
+  </view>
+    <!--佣金-->
+    <view hidden="{{currentTab!==2}}">
+    2
+  </view>
+    <!--筛选-->
+    <view hidden="{{currentTab!==3}}">
+    2
+  </view>
+</view>

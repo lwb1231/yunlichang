@@ -1,0 +1,86 @@
+<!--pages/index-DZZX/index.wxml-->
+<view class="header">
+  <view class="title">店主中心</view>
+  <view class="portrait" wx:for="{{portrait}}">
+    <image src="{{item.img}}"></image>
+    <view class="user-name">
+      <view class="designation">
+        {{item.user_name}}
+      </view>
+      <view class="progress-box progress">
+        <progress percent="20" active stroke-width="3" activeColor="#FFB6A3" />
+      </view>
+      <view class="num">
+        <text>{{item.num}}</text>
+        <image src="/images/main-dianzhuzhongxin/tishi icon22＊22@2x.png"></image>
+      </view>
+    </view>
+    <view class="icon-right">
+      <image src="/images/main-dianzhuzhongxin/shehzhi icon36＊36@2x.png"></image>
+      <image src="/images/main-dianzhuzhongxin/xiaoxi icon36＊36@2x.png"></image>
+    </view>
+  </view>
+  <view class="explain">
+    <text>等级说明</text>
+    <image src="/images/main-dianzhuzhongxin/jinruicon24＊24@2x.png"></image>
+  </view>
+</view>
+<view class="property">
+  <view class="user-property">店主资产</view>
+  <view class="property-1">
+    <view class="property-2">
+      <view class="rectangle " wx:for="{{user_property1}}">
+        <view class="year">
+          <image src="{{item.icon}}" style="width:26rpx;height:20rpx"></image>
+          <text>{{item.title}}</text>
+          <image src="{{item.img}}" style="width:20rpx;height:20rpx"></image>
+        </view>
+        <view class="money">
+          <text>{{item.num}}</text>
+        </view>
+      </view>
+      <view class="rectangle " wx:for="{{user_property2}}">
+        <view class="year">
+          <image src="{{item.icon}}" style="width:26rpx;height:20rpx"></image>
+          <text>{{item.title}}</text>
+          <image src="{{item.img}}" style="width:20rpx;height:20rpx"></image>
+        </view>
+        <view class="money">
+          <text>{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="property-2">
+      <view class="rectangle " wx:for="{{user_property3}}">
+        <view class="year">
+          <image src="{{item.icon}}" style="width:26rpx;height:20rpx"></image>
+          <text>{{item.title}}</text>
+          <image src="{{item.img}}" style="width:20rpx;height:20rpx"></image>
+        </view>
+        <view class="money">
+          <text>{{item.num}}</text>
+        </view>
+      </view>
+      <view class="rectangle " wx:for="{{user_property4}}">
+        <view class="year">
+          <image src="{{item.icon}}" style="width:26rpx;height:20rpx"></image>
+          <text>{{item.title}}</text>
+          <image src="{{item.img}}" style="width:20rpx;height:20rpx"></image>
+        </view>
+        <view class="money">
+          <text>{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="btn" bindtap="btn">提现</button>
+</view>
+<view class="activity">
+  <image src="/images/main-dianzhuzhongxin/huodong 710＊160@2x.png"></image>
+</view>
+    <!-- 店主必选列 -->
+<column></column>
+<management></management>
+<marketing></marketing>
+<instrument></instrument>
+<view class="footer"></view>

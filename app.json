@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/main-SXY/index",
+    "pages/main-DZZX/index",
+    "pages/main-HY/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  }, 
+  "tabBar": {
+    "custom": true,
+    "list": [{
+      "pagePath": "pages/main-HY/index",
+      "text": "货源",
+      "iconPath": "/images/tabbar/货源icon48＊48@2x.png",
+      "selectedIconPath": "/images/tabbar/货源icon@2x.png"
+    },
+    {
+      "pagePath": "pages/main-SXY/index",
+      "text": "商学院",
+      "iconPath": "/images/tabbar/商学院icon@2x.png",
+      "selectedIconPath": "/images/tabbar/商学院icon48＊48@2x.png"
+    },
+    {
+      "pagePath":  "pages/main-DZZX/index",
+      "text": "店主中心",
+      "iconPath": "/images/tabbar/店主中心icon@2x.png",
+      "selectedIconPath": "/images/tabbar/店主中心icon48＊48@2x.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

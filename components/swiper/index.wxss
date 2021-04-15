@@ -1,0 +1,36 @@
+/* components/swiper/index.wxss */
+.swiper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-left {
+  width: 360rpx;
+  height: 340rpx;
+}
+
+.swiper-right {
+  width: 320rpx;
+  height: 300rpx;
+  margin-left: 30rpx;
+}
+
+.switchover_1 {
+  display: inline-block;
+  width: 40rpx;
+  height: 4rpx;
+background: #DD501B;
+  border-radius: 2rpx;
+  margin-right: 20rpx;
+}
+.switchover_2 {
+  display: inline-block;
+  width: 40rpx;
+  height: 4rpx;
+  background: #999999;
+  border-radius: 2rpx;
+  margin-right: 20rpx;
+}

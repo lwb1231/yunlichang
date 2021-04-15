@@ -1,0 +1,12 @@
+<!--components/management/index.wxml-->
+    <!-- 列项 -->
+    <view class="seleban">
+      <text>工具管理</text>
+      <view class="sebitem-1">
+        <view class="sebitem" wx:for="{{seban}}">
+        <image src="{{item.img}}"></image>
+        <view class="sebitem-info">{{item.info}}</view>
+      </view>
+      </view>
+
+    </view>

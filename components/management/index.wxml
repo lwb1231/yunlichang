@@ -1,0 +1,19 @@
+<!--components/management/index.wxml-->
+<!-- 列项 -->
+<view class="seleban">
+  <text>店铺管理</text>
+  <view class="sebitem-1">
+    <view class="sebitem" wx:for="{{seban}}">
+      <view class="sebitem-top">
+        <image src="{{item.img}}"></image>
+        <view class="sebitem-info">{{item.info}}</view>
+      </view>
+      <view class="sebitem-bottom">
+        <image src="{{item.img1}}"></image>
+        <view class="sebitem-info">{{item.info1}}</view>
+      </view>
+
+    </view>
+  </view>
+
+</view>

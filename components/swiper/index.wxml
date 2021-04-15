@@ -1,0 +1,11 @@
+<view class="swiper">
+  <view>
+    <image class="swiper-left" src="/images/main-shangxueyuan/banner1@2x.png"></image>
+    <image class="swiper-right" src="/images/main-shangxueyuan/banner2@2x.png" bindtap="click"></image>
+  </view>
+
+  <view class="switchover">
+    <text class="switchover_1" bindtap="click_left"></text>
+    <text class="switchover_2" bindtap="click_right"></text>
+  </view>
+</view>

@@ -1,0 +1,133 @@
+/* pages/main-SXY/index.wxss */
+page {
+  background: #EEEEEE;
+}
+
+/*平台操作*/
+.seleban {
+  width: 712rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 39rpx;
+  margin-bottom: 42rpx;
+}
+
+.sebitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sebitem image {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.sebitem .sebitem-info {
+  width: 95rpx;
+  height: 23rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 12rpx;
+}
+
+/* 店主必备 */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 710rpx;
+  height: 31rpx;
+  margin: 0 auto;
+  margin-bottom: 18rpx;
+}
+
+/* 左标题 */
+.title-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-left text {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FF5224;
+}
+
+.title-left image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+}
+
+/* 右标题 */
+.title-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-right text {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FF5224;
+}
+
+.title-right image {
+  width: 17rpx;
+  height: 29rpx;
+  margin-left: 11rpx;
+}
+
+/* 主要板块 */
+.content {
+  width: 710rpx;
+  height: 240rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.details{
+  width: 352rpx;
+  display: flex;
+  flex-direction: column;
+}
+.details text:nth-child(1){
+font-size: 28rpx;
+font-family: PingFang SC;
+font-weight: bold;
+color: #333333;
+}
+.details text:nth-child(2){
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin: 18rpx 0 37rpx 0;
+  }
+  .details text:nth-child(3){
+    font-size: 22rpx;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #666666;
+    }
+.content image{
+  width: 320rpx;
+  height: 240rpx;
+}
+/* 底部填充内容 */
+.footer {
+  width: 750rpx;
+  height: 500rpx;
+}

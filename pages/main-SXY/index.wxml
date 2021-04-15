@@ -1,0 +1,34 @@
+<!--pages/main-SXY/index.wxml-->
+<navigation-bar></navigation-bar>
+<swiper-com></swiper-com>
+<!-- 平台操作列列 -->
+<view class="seleban">
+  <view class="sebitem" wx:for="{{seban}}">
+    <image src="{{item.img}}"></image>
+    <view class="sebitem-info">{{item.info}}</view>
+  </view>
+</view>
+<!-- 店主秘籍列 -->
+<view wx:for="{{shopkeeper}}" style="margin:20rpx 0 ;">
+  <view class="title">
+    <view class="title-left">
+      <image src="{{item.icon}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+    <view class="title-right">
+      <text>{{item.right_title}}</text>
+      <image src="{{item.icon_right}}"></image>
+    </view>
+  </view>
+  <view class="content">
+    <image src="{{item.img}}"></image>
+    <view>
+      <view class="details">
+          <text>{{item.title_main}}</text>
+          <text>{{item.introduce}}</text>
+          <text>{{item.introduce_mian}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="footer"></view>

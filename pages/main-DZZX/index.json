@@ -1,0 +1,9 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "column":"/components/column",
+    "management":"/components/management",
+    "marketing":"/components/marketing",
+    "instrument":"/components/instrument"
+  }
+}

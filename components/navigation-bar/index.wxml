@@ -1,0 +1,6 @@
+<!--components/navigation-bar/index.wxml-->
+  <view class="navigation-bar">
+    <text class="title">
+      商学院
+    </text>
+</view>

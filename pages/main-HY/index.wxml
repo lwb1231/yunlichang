@@ -1,0 +1,118 @@
+<!--pages/main-HY/index.wxml-->
+<view class="tab-heade">
+  <view class="search">
+    <text class="text">云里仓</text>
+    <view class="inp">
+      <image src="../../images/main/搜索icon24＊24@2x.png"></image>
+      <input type="text" placeholder="年货">
+      </input>
+    </view>
+  </view>
+  <!--头部导航条-->
+  <!-- <view class="navbar"">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"
+      bindtap="navbarTap">{{item}}</text>
+    <view wx:for="{{icon_right_top}}" class="item {{currentTab==index ? ''  : ''}}" wx:key="unique" bindtap="navbarTap"
+      id="right-icon">
+      <view class="icon-big">
+        <image hidden="{{currentTab!==index}}" class="icon-style" src="{{item.url}}"></image>
+      </view>
+    </view>
+    <view class="classify">
+      <image src="{{icon}}"></image>
+      <text>分类</text>
+    </view>
+  </view> -->
+  <view class="nav-height">
+    <!-- tab导航栏 -->
+    <!-- scroll-left属性可以控制滚动条位置 -->
+    <!-- scroll-with-animation滚动添加动画过渡 -->
+    <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+        <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+            <view class="nav-item {{currentTab == idx ?'active':''}}"  data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}</view>
+        </block>        
+    </scroll-view>
+    <view class="classify">
+      <image src="{{icon}}"></image>
+      <text>分类</text>
+    </view>
+    <!-- 页面内容 -->
+</view>
+
+
+  <!--云店推荐-->
+  <view hidden="{{currentTab!==0}}">
+    <!--轮播图-->
+    <view class="swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+        circular="true">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <navigator url="{{item.link}}" hover-class="navigator-hover">
+              <image src="{{item.url}}" class="slide-image" mode='aspectFit' width="710" height="280" />
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="serve">
+      <view class="serve_1">
+        <image style="margin-right:10rpx" src="/images/main/一件代发icon24＊24@2x.png"></image>
+        <text>一件代发</text>
+      </view>
+      <view class="line"></view>
+
+      <view class="serve_1">
+        <image style="margin-right:10rpx" src="/images/main/售后无忧icon24＊24@2x.png"></image>
+        <text>售后无忧</text>
+      </view>
+      <view class="line"></view>
+
+      <view class="serve_1">
+        <image style="margin-right:10rpx" src="/images/main/源头直供icon24＊24@2x.png"></image>
+        <text>源头直供</text>
+      </view>
+      <!-- <view wx:for="{{serve}}" class="serve_1">
+      <image src="{{item.icon}}"></image>
+      <text>{{item.text}}</text>
+    <view class="line"></view>
+
+    </view> -->
+
+    </view>
+    <!-- 店主必选列 -->
+    <view class="seleban">
+      <view class="sebitem" wx:for="{{seban}}">
+        <image src="{{item.img}}"></image>
+        <view class="sebitem-info">{{item.info}}</view>
+      </view>
+    </view>
+    <!-- 今日热销列 -->
+    <view class="todaylist-wrap">
+      <view class="toli-item" wx:for="{{todayli}}">
+        <view class="item-tit">{{item.tit}}</view>
+        <view class="item-img">
+          <image wx:for="{{item.conlist}}" wx:for-item="items" src="{{items}}"></image>
+        </view>
+      </view>
+    </view>
+    <recommend-main></recommend-main>
+  </view>
+
+  <!--时令水果-->
+  <view hidden="{{currentTab!==1}}">
+  </view>
+  <!--肉禽蛋类-->
+  <view hidden="{{currentTab!==2}}">
+  </view>
+  <!--粮油副食-->
+  <view hidden="{{currentTab!==3}}">
+  </view>
+  <!--海鲜水产-->
+  <view hidden="{{currentTab!==4}}">
+  </view>
+  <!--休闲食-->
+  <view hidden="{{currentTab!==5}}">
+  </view>
+</view>
+<view class="footer"></view>

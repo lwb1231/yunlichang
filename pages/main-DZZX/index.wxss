@@ -1,0 +1,197 @@
+/* pages/index-DZZX/index.wxss */
+.header {
+  width: 750rpx;
+  height: 320rpx;
+  background: #FF5224;
+  border-radius: 10rpx;
+  position: relative;
+  top: 0;
+}
+
+.title {
+  width: 100%;
+  height: 37rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 66rpx;
+  margin-bottom: 34rpx;
+  font-size: 38rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.portrait image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.portrait {
+  display: flex;
+  align-items: center;
+  width: 710rpx;
+  margin: 0 auto;
+  position: relative;
+}
+
+.user-name {
+  margin-left: 20rpx;
+  width: 300rpx;
+}
+
+.designation {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.num {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.num image {
+  width: 22rpx;
+  height: 22rpx;
+  margin-left: 9rpx;
+}
+
+.icon-right {
+  position: absolute;
+  right: 0;
+  width: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-right image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.progress {
+  margin: 24rpx 0 7rpx 0;
+}
+
+.explain {
+  width: 710rpx;
+  height: 22rpx;
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.explain image {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+/* 资产 */
+.property {
+  width: 710rpx;
+  height: 469rpx;
+  background: #FF6F49;
+  box-shadow: 2rpx 4rpx 10rpx 1rpx rgba(255, 82, 36, 0.2);
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 42rpx;
+  position: relative;
+}
+
+.user-property {
+  width: 100%;
+  height: 31rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 19rpx;
+}
+
+.property-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 18rpx;
+}
+
+.property-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rectangle {
+  width: 280rpx;
+  height: 140rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rpx;
+  flex-direction: column;
+}
+
+.year {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 19rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FF6F49;
+}
+
+.money {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+}
+
+.btn {
+  width: 180rpx;
+  height: 60rpx;
+  background: #FE3500;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.activity {
+  width: 710rpx;
+  height: 160rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.activity image {
+  width: 100%;
+  height: 100%;
+}
+/* 底部填充内容 */
+.footer {
+  width: 750rpx;
+  height: 500rpx;
+}

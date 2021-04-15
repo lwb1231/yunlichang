@@ -1,0 +1,59 @@
+/* components/management/index.wxss */
+
+/*列项*/
+.seleban {
+  width: 710rpx;
+  height: 343rpx;
+  background: #FFFFFF;
+  box-shadow: 2rpx 4rpx 10rpx 1rpx rgba(255, 82, 36, 0.2);
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 21rpx;
+}
+
+.seleban>text {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  padding: 20rpx 0 0 20rpx;
+}
+
+.sebitem-1 {
+  display: flex;
+  margin-top: 12rpx;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 39rpx;
+}
+
+.sebitem-top,
+.sebitem-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sebitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sebitem image {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.sebitem .sebitem-info {
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 20rpx;
+}
+
+.sebitem-top {
+  margin-bottom: 23rpx;
+}
